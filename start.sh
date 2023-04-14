@@ -28,10 +28,5 @@ done
 # run deploy
 screen -S deploy -d -m bash -c "/usr/bin/python3 deploy.py"
 
-# wait for vehicles to be fully deployed
-until ! screen -list | grep -q "deploy"; do
-  sleep 1
-done
-
 # open MAVProxy
 screen -S mavproxy -d -m bash -c "$command"
