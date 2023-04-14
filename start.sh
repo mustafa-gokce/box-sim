@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # initial configurations
-TOTAL_VEHICLE_COUNT=5
+TOTAL_VEHICLE_COUNT=10
 
 # clear previous run
 sudo rm -r logs*
